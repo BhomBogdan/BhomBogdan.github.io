@@ -1,0 +1,91 @@
+
+
+
+  .SubContainer-FlexBox {
+    
+    max-width: calc(100% - 5em);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 70em;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+
+  }
+  .UpContent {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .UpContent > * {
+    padding: 15px 0px;
+  }
+  a2 {
+    color: #707070;
+    font-size: 28px;
+    font-weight: medium;
+    
+  }
+  a1 {
+    font-weight: bold;
+    color: #272727;
+    font-size: 36px;
+  }
+  a3{
+    font-weight: medium;
+  }
+  .button >a3{
+    color:white;
+  }
+  .Left {
+    padding: 40px;
+  }
+
+  .button {
+    color: white;
+    margin-right: 60px;
+    font-size: 28px;
+    padding: 15px 42px;
+    border-radius: 42px;
+    text-align: center;
+    display: inline-block;
+    background-color: #6aa7e8;
+  }
+  a3 {
+    font-size: 26px;
+    color: #6aa7e8;
+  }
+  .ContactAndButton {
+    margin-top: 30px;
+  }
+  
+  .imagehere {
+    width: 417px;
+    height: 417px;
+    border-radius: 30px;
+    object-fit: cover;
+
+  }
+  .imagehere >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  .DownContentRightSection {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  .iconhere {
+    background-color: #6aa7e8;
+  
+    overflow: hidden;
+  
+    width: 52px;
+    height: 52px;
+  }
+  

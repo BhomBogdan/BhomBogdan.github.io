@@ -1,8 +1,13 @@
 import React from "react"
+
 import Profile from '../assets/images/profile.jpg'
+
+
 import "./landing.scss"
-
-
+import BehanceIcon from "../assets/icons_landing/Icon-SolidbehancePNG.png"
+import GithubIcon from "../assets/icons_landing/Icon-SolidgithubPNG.png"
+import InstagramIcon from "../assets/icons_landing/Icon-SolidInstagramPNG.png"
+import CvIcon from "../assets/icons_landing/Icon-SolidcvPNG.png"
 const Landing = () => {
   
 
@@ -13,7 +18,7 @@ const Landing = () => {
     <div className="Left">
       <div className="UpContent">
         <a2>Hello, I'm Bogdan</a2>
-        <a1>Freelancer Front-End and Back-End</a1>
+        <a1>Full-stack developer</a1>
         <a2>Lorem impsum asa dfs </a2>
       </div>
 
@@ -28,10 +33,22 @@ const Landing = () => {
         <div className="imagehere"><img src={Profile}/></div>
       </div>
       <div className="DownContentRightSection">
-        <div className="iconhere"></div>
-        <div className="iconhere"></div>
-        <div className="iconhere"></div>
-        <div className="iconhere"></div>
+        <div className="iconhere">
+          <img src={CvIcon}></img>
+          <a5>CV </a5>
+        </div>
+        <div className="iconhere">
+        <img src={GithubIcon}></img>
+          <a5>Github</a5>
+        </div>
+        <div className="iconhere">
+        <img src={InstagramIcon}></img>
+          <a5>Instagram</a5>
+        </div>
+        <div className="iconhere">
+        <img src={BehanceIcon}></img>
+         <a5>Behance</a5>
+        </div>
       </div>
     </div>
   </div>

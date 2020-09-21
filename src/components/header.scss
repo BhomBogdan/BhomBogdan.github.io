@@ -1,5 +1,9 @@
+
+@import './variable.scss';
+
 .containerNav {
   width: 100%;
+
 
 }
 .navbarTop {
@@ -7,16 +11,19 @@
   max-width: calc(100% - 5em);
   width: 100em;
 }
-.general {
-}
+
 .brand {
-  display: block;
+
 
   margin-left: 64px;
 }
-.brand img {
-  width: 100px;
+.brand>img {
+  width: 23px;
   vertical-align: middle;
+  margin:0px;
+}
+.brand>a{
+  margin-left: -4px;
 }
 
 .Navbar {
@@ -95,33 +102,4 @@
   background-color: #646f79;
   height: 4px;
 }
-.current {
-  background-color: red;
-}
-@media only screen and (max-width: 868px) {
-  .brand {
-    display: none;
-    margin: 0;
-  }
-  .Navbar__Items--right {
-    margin-left: 0;
-  }
-  .Navbar__Items {
-    width: 100%;
-    justify-content: center;
-  }
-  .NavbarMenu a:hover {
-  }
 
-  .Navbar__ToggleShow {
-    display: flex;
-  }
-
-  .brand img {
-    margin-left: 0px;
-  }
-  .Navbar__Link:hover {
-    background-color: #f5f5f5;
-    border-radius: 5px;
-  }
-}

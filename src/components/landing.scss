@@ -1,15 +1,22 @@
+@import './variable.scss';
 
-
-
+.container-FlexBox{
+  width: 100%;
+}
   .SubContainer-FlexBox {
     
-    max-width: calc(100% - 5em);
-    padding-top: 100px;
+
+    padding-top: 4rem;
     padding-bottom: 100px;
-    width: 70em;
     margin: 0 auto;
-    justify-content: space-between;
+    max-width: calc(100% - 5em);
+    width: 70em;
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+   
 
   }
   .UpContent {
@@ -43,18 +50,24 @@
   }
 
   .button {
-    color: white;
     margin-right: 60px;
     font-size: 28px;
     padding: 15px 42px;
-    border-radius: 42px;
+    border-radius: 20px;
     text-align: center;
     display: inline-block;
-    background-color: #6aa7e8;
+    background-color:$accent-color;
+    box-shadow: 0 5px 0 0 #4F97E3;
+    
+  }
+  .button:active{
+    transform: translateY(5px);
+   
+    box-shadow: none;
   }
   a3 {
     font-size: 26px;
-    color: #6aa7e8;
+    color: $accent-color;
   }
   .ContactAndButton {
     margin-top: 30px;
@@ -65,13 +78,14 @@
     height: 417px;
     border-radius: 30px;
     object-fit: cover;
-
+    box-shadow: $shadow1;
   }
   .imagehere >img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 30px;
+    
   }
   .DownContentRightSection {
     display: flex;
@@ -81,11 +95,36 @@
     justify-content: space-between;
   }
   .iconhere {
-    background-color: #6aa7e8;
-  
-    overflow: hidden;
-  
-    width: 52px;
-    height: 52px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 60px;
+    height: 60px;
+   
   }
-  
+  .iconhere>a5{
+    color:$TxtColor2;
+    margin-top:10px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+.iconhere>img{
+  box-shadow: $shadow1;
+
+  transition: transform 0.2s;
+}
+  //hover
+.iconhere>img:hover{
+  box-shadow: none;
+  border-radius: 8px;
+  transform: scale(1.04);
+  padding:5px;
+}
+
+
+
+  //mobile

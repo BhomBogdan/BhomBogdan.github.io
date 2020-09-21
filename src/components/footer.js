@@ -1,10 +1,11 @@
 import React from 'react'
 
+import './footer.scss'
 
 const Footer = () => {
     return (
         <footer>
-            <p>Footer section</p>
+            <p>Check out my profiles</p>
         </footer>
     )
 }

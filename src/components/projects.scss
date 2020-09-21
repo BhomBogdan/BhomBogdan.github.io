@@ -1,13 +1,16 @@
+@import './variable.scss';
+
 * {
     box-sizing: border-box;
   }
-  .container-projects {
+.container-projects {
     margin: 0 auto;
     max-width: calc(100% - 5em);
     width: 70em;
-
+  margin-bottom:150px;
   }
-  .tittle {
+.tittle {
+  
     color: black;
     padding: 20px;
     display: flex;
@@ -24,9 +27,19 @@
   a2 {
     font-size: 20px;
   }
-  
-  a4 {
-    font-size: 40px;
+  .textprojects{
+    color:white;
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .textprojects >a2{
+    color:white;
+  }
+  .textprojects >a4 {
+    
+    font-size: 68px;
+    font-weight: bold;
   }
   .columns-flex-1 {
     display: flex;
@@ -65,19 +78,30 @@
     width: 100%;
     height: 400px;
   }
+  .project3>.buttonsproject{
+    color: #feca57;
+  }
   .project4 {
     background-color: #1dd1a1;
     width: 100%;
     height: 600px;
   }
+  .imageproject >img{
+    width:100%;
+
+
+  
+  }
   
   .projectContainer {
-    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-      0 15px 40px rgba(166, 173, 201, 0.2);
+    box-shadow: $shadow1;
     color: white;
     transition: transform 0.2s;
     border-radius: 30px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+
     margin-bottom: 50px;
     text-align: center;
   }
@@ -88,14 +112,58 @@
   .projectContainer:hover {
     transform: scale(1.05);
   }
-  @media screen and (max-width: 992px) {
-    .subcontainer {
+  
+  .buttonsproject{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .buttonsproject{
+    flex-grow: 1; 
+ color:#ff6b6b;
+    
+
+  }
+  .buttonProject1{
+    background-color: white;
+    padding:10px;
+    font-size: 20px;
+    margin:0px 10px 0px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 5px 0 0 #E0E0E0;
+  }
+
+
+//hover
+  .buttonProject1:active{
+    transform: translateY(5px);
+box-shadow: none;
+  }
+//temporal
+
+.workinprogress{
+
+
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+//responsive
+
+
+
+  @media only screen and (max-width: 750px) {
+    .subcontainerS{
+      
+
       flex-direction: column;
-      flex-wrap: wrap;
+
       align-items: stretch;
-    }
-    .project2 {
-      margin-bottom: 0px;
+      align-content: stretch;
     }
   }
   

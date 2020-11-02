@@ -1,23 +1,13 @@
-> To do 
+# Hello
 
-🟩(Done)  🟥(Not done)   🟨(Doing)  ⬜(Default)
-
-# Header
-```python
-  import favicon from './favicon.png';
-  <link rel="shortcut icon" type="image/png" href={favicon} />
-```
-  ⬜ - Favicon change
-
-# Landing section 
-  🟩 - Add profile image
-  ⬜ - Responsive
-  ⬜ - Better Title introduction
-  ⬜ - Rename classes
-  🟩 - Button work,animation
-  🟩 - Animatie icons 
-
-# Projects section
+The portofolio-site is created with the help of Gatsby wich is base on React
 
 
-# V
+
+
+## To do 
+
+### Navbar
+
+adsad
+

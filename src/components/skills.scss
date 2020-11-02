@@ -57,3 +57,13 @@
   object-fit: cover;
   border-radius: 10px;
 }
+
+
+//Mobile
+
+@media (max-width: 480px) {
+.flex-container{
+  flex-direction: column;
+}
+
+}

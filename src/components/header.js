@@ -1,39 +1,44 @@
 import React, {useState} from 'react'
 
 import "./header.scss"
-import BIcon from "../assets/icons_landing/BIcon.png"
-import { Link } from "gatsby"
+
+
 
 
 const Header = () => {
   
-
+    const ToggleButtonBurger = () => {
+        let el = document.getElementById('test1');
+        if(el.classList.contains('hideToggle')){
+            el.classList.toggle('hide')
+            el.classList.remove('hideToggle')}
+        else{
+            el.classList.toggle('hide')
+            el.classList.add('hideToggle')
+        }
+        console.log(el)
+    }
   
     return (
-      <div className="containerNav">
-      <div className="navbarTop">
-        <div className="Navbar">
-          <div className="Navbar__Link brand toggle border show" id="borderr">
-          <img src={BIcon} /> <a href="www.google.com">ogdan Cristian</a>
-          </div>
-    
-          <div className="Navbar__Items Navbar__Items--right ">
-            <div className="Navbar__Link NavbarMenu ">
-              <a href="{{ site.baseurl }}/">Projects</a>
-           
+
+        <div className="containerNav">
+            <div className="subContainerNav">
+                <div className="LogoBurgerSubContainer">
+                    <div className="logoNavBar" onClick={()=>{window.location.href="/"}}></div>
+                    <div className="BurgerToggle" onClick={()=>ToggleButtonBurger()}>
+                        <div className="burger-line"></div>
+                        <div className="burger-line"></div>
+                        <div className="burger-line"></div>
+                    </div>
+                </div>
+                
+                <div id="test1" className="NavBarItems hideToggle">
+                    <div className="Nav" >Projects</div>
+                    <div className="Nav">Knowledge</div>
+                    <div className="Nav" onClick={()=>{window.location.href="Contact"}}>Contact</div>
+                </div>
             </div>
-            <div className="Navbar__Link NavbarMenu">
-              <a href="{{ site.baseurl }}/">Knowledge</a>
-            </div>
-            <div className="Navbar__Link NavbarMenu">
-              <a href="#goto">Contact</a>
-            </div>
-    
-          </div>
         </div>
-      </div>
-    </div>
-        
     )
 }
 

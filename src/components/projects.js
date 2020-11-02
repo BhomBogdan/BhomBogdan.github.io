@@ -5,6 +5,7 @@ import "./projects.scss"
 
 import upturn_mockup from '../assets/projects/upturn_mockup.png'
 import projectIllustrator from '../assets/projects/projectsIllustrator.png'
+
 const Projects = () => {
   
 

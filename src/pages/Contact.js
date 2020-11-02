@@ -1,12 +1,12 @@
 
 import React from "react"
 import Layout from '../components/layout'
-
+import Form from '../components/Form'
 
 const Contact = () => {
     return (
       <Layout>
-
+          <Form/>
       </Layout>
 
 

@@ -8,9 +8,15 @@ import BehanceIcon from "../assets/icons_landing/Icon-SolidbehancePNG.png"
 import GithubIcon from "../assets/icons_landing/Icon-SolidgithubPNG.png"
 import InstagramIcon from "../assets/icons_landing/Icon-SolidInstagramPNG.png"
 import CvIcon from "../assets/icons_landing/Icon-SolidcvPNG.png"
+import { navigate } from "gatsby"
+
+import  PortofolioCV from '../../static/PortofolioCV.pdf'
 const Landing = () => {
   
-
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
+}
   
     return (
 <div className="container-FlexBox">
@@ -19,12 +25,13 @@ const Landing = () => {
       <div className="UpContent">
         <a2>Hello, I'm Bogdan</a2>
         <a1>Full-stack developer</a1>
-        <a2>Lorem impsum asa dfs </a2>
+        <a2>I want to share the knowledge that I have acquired so
+far and I am willing to learn many new things.</a2>
       </div>
 
       <div className="ContactAndButton">
         <div className="button"><a3>My work</a3></div>
-        <a3> Contact Me</a3>
+        <div className="buttonText"><a3>Contact me</a3></div>
       </div>
     </div>
 
@@ -33,15 +40,15 @@ const Landing = () => {
         <div className="imagehere"><img src={Profile}/></div>
       </div>
       <div className="DownContentRightSection">
-        <div className="iconhere">
+        <div className="iconhere" onClick={()=>{openInNewTab('PortofolioCV.pdf')}} >
           <img src={CvIcon}></img>
           <a5>CV </a5>
         </div>
-        <div className="iconhere">
+        <div className="iconhere" onClick={()=>{openInNewTab("https://github.com/BhomBogdan")}}>
         <img src={GithubIcon}></img>
           <a5>Github</a5>
         </div>
-        <div className="iconhere">
+        <div className="iconhere" onClick={()=>{openInNewTab("https://www.instagram.com/bhombogdan/")}}>
         <img src={InstagramIcon}></img>
           <a5>Instagram</a5>
         </div>

@@ -1,15 +1,15 @@
 
 import React from "react"
 
-import Header from './Header'
-import Footer from './Footer'
+import Header from './header'
+import Footer from './footer'
 
 import './layout.scss'
 
 
 const Layout = ({children}) => {
     return (
-        <div>
+        <div class="containerBody">
             <Header />
             {children}
             <Footer />

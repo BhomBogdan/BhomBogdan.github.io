@@ -1,105 +1,98 @@
 
 @import './variable.scss';
 
-.containerNav {
-  width: 100%;
+.subContainerNav{
 
-
-}
-.navbarTop {
-  margin: 0 auto;
-  max-width: calc(100% - 5em);
-  width: 100em;
-}
-
-.brand {
-
-
-  margin-left: 64px;
-}
-.brand>img {
-  width: 23px;
-  vertical-align: middle;
-  margin:0px;
-}
-.brand>a{
-  margin-left: -4px;
-}
-
-.Navbar {
   align-items: center;
   margin: 0 auto;
   max-width: calc(100% - 5em);
   width: 90em;
   padding-top: 10px;
   padding-bottom: 10px;
-
   display: flex;
-}
-.brand a {
-  color: #6aa7e8;
-
-  font-size: 18px;
-  text-decoration: none;
-}
-.NavbarMenu a {
-  padding: 10px 10px;
-  font-size: 15px;
-  text-decoration: none;
-
-  color: #646f79;
-
-  margin: 10px;
-  width: 100%;
-}
-.NavbarMenu a:hover {
-  background-color: #f5f5f5;
-  border-radius: 4px;
-}
-.Navbar__Items {
-  display: flex;
-}
-#Davai {
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.Navbar__Items--right {
+.logoNavBar{
+
+  display: block;
+  margin-left: 64px;
+  height: 50px;
+  width: 50px;
+  background-color: $accent-color;
+  margin-left: 64px;
+}
+
+.NavBarItems{
+  height: 100%;
+  overflow: hidden;
   margin-left: auto;
+  display: flex;
 }
-.Navbar__Link {
+
+.Nav{
+  font-family: Poppins,sans-serif;
   padding: 10px;
   display: block;
 }
-.Navbar__Link a {
-  text-decoration: none;
-
-  font-size: 15px;
+.Nav{
+    padding: 10px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #646f79;
+    margin: 10px;
+    width: 100%;
+    min-width: 100px;
+    text-align: center;
+    border-radius:10px ;
 }
-.show {
-  border-bottom: none;
+
+.Nav:hover,.logoNavBar:hover{
+  cursor: pointer;
+  background-color: #dedede;
 }
 
-.Navbar__Link-toggle {
+//Burger menu
+.BurgerToggle{
   display: none;
 }
 
-.wrapper {
-  overflow: visible;
-}
-.floatparrent {
-  position: relative;
-}
-.floattest {
-  position: absolute;
-}
-.Navbar__Items {
-  height: 100%;
-  overflow: hidden;
-}
-.menuDraw {
-  width: 16px;
-  margin: 2px;
-  border-radius: 3px;
-  background-color: #646f79;
-  height: 4px;
+.burger-line{
+  display: block;
+  width: 25px;
+  background-color:  #646f79;
+  height: 5px;
+  margin-top: 3px;
+  border-radius: 2px;
 }
 
+.hide{
+  display:flex;
+}
+
+//Break points
+
+@media (max-width: 480px) {
+  .LogoBurgerSubContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+  }
+  .logoNavBar{
+    margin-left: 0px;
+  }
+  .NavBarItems{
+    flex-direction: column;
+    width: 100%;
+    flex-basis: 100%;
+  }
+  .BurgerToggle {
+    margin-left: auto;
+    display: block;
+  }
+  .hideToggle{
+  display: none;
+  }
+}

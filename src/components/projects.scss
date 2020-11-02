@@ -37,8 +37,8 @@
     color:white;
   }
   .textprojects >a4 {
-    
-    font-size: 68px;
+    overflow: hidden;
+    font-size: 7vh;
     font-weight: bold;
   }
   .columns-flex-1 {
@@ -167,3 +167,12 @@ box-shadow: none;
     }
   }
   
+
+
+@media (max-width: 480px) {
+  .textprojects>a4{
+    font-size: 4vh;
+
+  }
+  
+  }

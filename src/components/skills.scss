@@ -1,12 +1,11 @@
-@import './variable.scss';
+@import "./variable.scss";
 
 .subcontainer {
   max-width: calc(100% - 5em);
   width: 70em;
   margin: 0 auto;
-
 }
-.container{
+.container {
   margin-bottom: 200px;
 }
 .flex-container {
@@ -20,50 +19,47 @@
   width: 100%;
   margin: 20px;
 }
-.box>h1{
-  color:$TxtColor2;
+.box > h1 {
+  color: $TxtColor2;
   font-weight: 600;
 }
-.skillt{
+.skillt {
   font-weight: bold;
 }
 .list {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
-  align-content: center;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+
   padding: 5px 0px 5px 0px;
 }
 .icon {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 78px;
   margin: 20px;
-
-
 }
 
-.icon>a2{ font-size: 16px;
+.icon > a2 {
+  padding-top: 8px;
+  font-size: 16px;
   font-weight: 600;
-
-
-
 }
-.icon>img {
-
+.icon > img {
   width: 60px;
   height: 60px;
   object-fit: cover;
   border-radius: 10px;
 }
 
-
 //Mobile
 
 @media (max-width: 480px) {
-.flex-container{
-  flex-direction: column;
-}
-
+  .flex-container {
+    flex-direction: column;
+  }
 }

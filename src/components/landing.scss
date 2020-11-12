@@ -1,158 +1,146 @@
-@import './variable.scss';
+@import "./variable.scss";
 
-.container-FlexBox{
+.container-FlexBox {
   width: 100%;
 }
-  .SubContainer-FlexBox {
-    
+.SubContainer-FlexBox {
+  padding-top: 4rem;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  max-width: calc(100% - 5em);
+  width: 70em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+}
+.UpContent {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.UpContent > * {
+  padding: 15px 0px;
+}
+a2 {
+  color: #707070;
+  font-size: 28px;
+  font-weight: medium;
+}
+a1 {
+  font-weight: bold;
+  color: #272727;
+  font-size: 36px;
+}
+a3 {
+  font-weight: medium;
+}
+.button > a3 {
+  color: white;
+}
+.Left {
+  padding: 40px;
+}
 
-    padding-top: 4rem;
-    padding-bottom: 100px;
-    margin: 0 auto;
-    max-width: calc(100% - 5em);
-    width: 70em;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-content: stretch;
-   
+.button {
+  margin-right: 60px;
+  font-size: 28px;
+  padding: 15px 42px;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+  background-color: $accent-color;
+  box-shadow: 0 5px 0 0 #4f97e3;
+}
 
-  }
-  .UpContent {
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-  
-  }
-  .UpContent > * {
-    padding: 15px 0px;
-  }
-  a2 {
-    color: #707070;
-    font-size: 28px;
-    font-weight: medium;
-    
-  }
-  a1 {
-    font-weight: bold;
-    color: #272727;
-    font-size: 36px;
-  }
-  a3{
-    font-weight: medium;
-  }
-  .button >a3{
-    color:white;
-  }
-  .Left {
-    padding: 40px;
-  }
+.buttonText {
+  font-size: 28px;
+  padding: 15px 42px;
+  border-radius: 20px;
+  text-align: center;
+  color: $TxtColor2;
+  display: inline-block;
+}
+.button:active {
+  transform: translateY(5px);
 
-  .button {
-    margin-right: 60px;
-    font-size: 28px;
-    padding: 15px 42px;
-    border-radius: 20px;
-    text-align: center;
-    display: inline-block;
-    background-color:$accent-color;
-    box-shadow: 0 5px 0 0 #4F97E3;
-    
-  }
+  box-shadow: none;
+}
+.buttonText {
+  text-decoration: none;
+  font-size: 26px;
+  color: $accent-color;
+}
+.ContactAndButton {
+  margin-top: 30px;
+}
 
-  .buttonText{
-    
-    font-size: 28px;
-    padding: 15px 42px;
-    border-radius: 20px;
-    text-align: center;
-    color:$TxtColor2;
-    display: inline-block;
-  }
-  .button:active{
-    transform: translateY(5px);
-   
-    box-shadow: none;
-  }
-  a3 {
-    font-size: 26px;
-    color: $accent-color;
-  }
-  .ContactAndButton {
-    margin-top: 30px;
-  }
-  
-  .imagehere {
-    width: 417px;
-    height: 417px;
-    border-radius: 30px;
-    object-fit: cover;
-    box-shadow: $shadow1;
-  }
-  .imagehere >img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 30px;
-    
-  }
-  .DownContentRightSection {
-    display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 40px;
-    justify-content: space-between;
-  }
-  .iconhere {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 60px;
-    height: 60px;
-   
-  }
-  .iconhere>a5{
-    color:$TxtColor2;
-    margin-top:10px;
-    font-weight: 600;
-    font-size: 15px;
-  }
-.iconhere>img{
+.imagehere {
+  width: 417px;
+  height: 417px;
+  border-radius: 30px;
+  object-fit: cover;
+  box-shadow: $shadow1;
+}
+.imagehere > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.DownContentRightSection {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.iconhere {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 60px;
+  height: 60px;
+}
+.iconhere > a5 {
+  color: $TxtColor2;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 15px;
+}
+.iconhere > img {
   box-shadow: $shadow1;
 
   transition: transform 0.2s;
 }
-  //hover
-.iconhere>img:hover{
+//hover
+.iconhere > img:hover {
   cursor: pointer;
   box-shadow: none;
   border-radius: 8px;
   transform: scale(1.04);
-  padding:5px;
+  padding: 5px;
 }
 
-
-
-  //mobile
-  @media (max-width: 480px) {
-    .SubContainer-FlexBox{
-      flex-direction:column;
-     width: 100%;
-      text-align: center;
-      
-    }
-    .Left{
-      justify-content: center;
-    }
-    .ContactAndButton{
-      text-align: center;
-    }
-    .imagehere{
-      width: 100%;
-    }
+//mobile
+@media (max-width: 480px) {
+  .SubContainer-FlexBox {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
   }
+  .Left {
+    justify-content: center;
+  }
+  .ContactAndButton {
+    text-align: center;
+  }
+  .imagehere {
+    width: 100%;
+  }
+}

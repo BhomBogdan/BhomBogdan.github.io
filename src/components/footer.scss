@@ -1,12 +1,10 @@
-@import './variable.scss';
-
-footer{
-    background-color:$accent-color;
-    text-align: center;
-    padding: 10px;
-    color: #646f79;
-    text-align: center;
-
-    margin-top: auto;
-    background-color: #222b37;
+@import "./variable.scss";
+footer {
+  background-color: $accent-color;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  margin-top: auto;
 }

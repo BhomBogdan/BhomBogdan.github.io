@@ -1,8 +1,6 @@
+@import "./variable.scss";
 
-@import './variable.scss';
-
-.subContainerNav{
-
+.subContainerNav {
   align-items: center;
   margin: 0 auto;
   max-width: calc(100% - 5em);
@@ -14,76 +12,89 @@
   justify-content: space-around;
 }
 
-.logoNavBar{
-
-  display: block;
-  margin-left: 64px;
-  height: 50px;
-  width: 50px;
-  background-color: $accent-color;
+.logoNavBar {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
   margin-left: 64px;
 }
 
-.NavBarItems{
+.textLogoNavBar {
+  font-weight: 500;
+
+  padding-left: 2px;
+  color: $accent-color;
+  font-size: 20px;
+}
+.NavBarItems {
   height: 100%;
   overflow: hidden;
   margin-left: auto;
   display: flex;
 }
 
-.Nav{
-  font-family: Poppins,sans-serif;
+.Nav {
+  font-family: Poppins, sans-serif;
   padding: 10px;
   display: block;
 }
-.Nav{
-    padding: 10px;
-    font-size: 17px;
-    text-decoration: none;
-    color: #646f79;
-    margin: 10px;
-    width: 100%;
-    min-width: 100px;
-    text-align: center;
-    border-radius:10px ;
+.Nav {
+  padding: 10px;
+  font-size: 17px;
+  text-decoration: none;
+  color: #646f79;
+  margin: 10px;
+  width: 100%;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 10px;
 }
 
-.Nav:hover,.logoNavBar:hover{
+.Nav:hover,
+.logoNavBar:hover {
   cursor: pointer;
+
   background-color: #dedede;
 }
-
+.logoNavBar:hover {
+  border-radius: 10px;
+  padding: 10px;
+}
 //Burger menu
-.BurgerToggle{
+.BurgerToggle {
   display: none;
 }
 
-.burger-line{
+.burger-line {
   display: block;
   width: 25px;
-  background-color:  #646f79;
+  background-color: #646f79;
   height: 5px;
   margin-top: 3px;
   border-radius: 2px;
 }
 
-.hide{
-  display:flex;
+.hide {
+  display: flex;
 }
 
 //Break points
 
 @media (max-width: 480px) {
-  .LogoBurgerSubContainer{
+  .LogoBurgerSubContainer {
     width: 100%;
     display: flex;
     flex-direction: row;
-   align-items: center;
+    align-items: center;
   }
-  .logoNavBar{
+  .logoNavBar {
     margin-left: 0px;
   }
-  .NavBarItems{
+  .NavBarItems {
     flex-direction: column;
     width: 100%;
     flex-basis: 100%;
@@ -92,7 +103,7 @@
     margin-left: auto;
     display: block;
   }
-  .hideToggle{
-  display: none;
+  .hideToggle {
+    display: none;
   }
 }

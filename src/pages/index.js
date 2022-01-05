@@ -8,6 +8,7 @@ import "../components/layout.scss"
 const IndexPage = () => {
   return (
     <Layout>
+    <h1>testrebuild</h1>
       <Landing />
       <Projects />
       <Skills />
